@@ -59,6 +59,13 @@ EfficientNetB0 (frozen)
 → Dense (Softmax, 4 classes)
 ```
 
+
+### Future enhancements
+
+- Fine-tune your model (unfreeze some EfficientNet layers for better accuracy)
+- Try other architectures like ResNet50 or EfficientNetB3
+
+
 --- Useful commands ---
 # Activate base conda
 ```
@@ -66,8 +73,6 @@ source ~/miniforge3/bin/activate
 ```
 
 # Create and activate conda environment
-```
-conda create -n covid_ai python=3.11
-conda activate covid_ai
-pip install -r requirements.txt
+```bash
+conda create -n covid_ai python=3.11 && conda activate covid_ai && pip install -r requirements.txt
 ```
