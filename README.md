@@ -57,9 +57,9 @@ EfficientNetB0 (frozen)
 → Dense (256, ReLU)
 → Dropout (0.45)
 → Dense (Softmax, 4 classes)
+```
 
-
---- Commands ---
+--- Useful commands ---
 # Activate base conda
 ```
 source ~/miniforge3/bin/activate
