@@ -43,19 +43,20 @@ data/
 
 ## 🧠 Model Architecture
 
-- **Base Model:** EfficientNetB0 (ImageNet pretrained)
-- **Input Size:** 224 × 224 × 3
-- **Pooling:** Global Max Pooling
-- **Regularization:** L1 + L2
-- **Dropout:** 0.45
-- **Optimizer:** Adamax
-- **Loss:** Categorical Cross-Entropy
+- **Base Model:** EfficientNetB0 (ImageNet pretrained)  
+- **Input Size:** 224 × 224 × 3  
+- **Pooling:** Global Average Pooling  
+- **Dense Layer:** 128 units, ReLU, L2 regularization (0.01)  
+- **Dropout:** 0.4  
+- **Output Layer:** Dense with softmax (4 classes)  
+- **Optimizer:** Adam (learning rate = 1e-4)  
+- **Loss:** Categorical Cross-Entropy  
 
 ```text
 EfficientNetB0 (frozen)
-→ Batch Normalization
-→ Dense (256, ReLU)
-→ Dropout (0.45)
+→ Global Average Pooling
+→ Dense (128, ReLU, L2 regularization)
+→ Dropout (0.4)
 → Dense (Softmax, 4 classes)
 ```
 
@@ -73,6 +74,15 @@ source ~/miniforge3/bin/activate
 ```
 
 # Create and activate conda environment
-```bash
-conda create -n covid_ai python=3.11 && conda activate covid_ai && pip install -r requirements.txt
 ```
+conda create -n covid_ai python=3.11
+```
+
+```
+conda activate covid_ai
+```
+
+```
+pip install -r requirements.txt
+```
+
