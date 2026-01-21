@@ -18,6 +18,15 @@ The goal of this project is to demonstrate how modern convolutional neural netwo
 
 ---
 
+## 🌐 Live Demo
+
+- **Frontend (Streamlit App):** [https://medvision-frontend-09b9778a1861.herokuapp.com](https://medvision-frontend-09b9778a1861.herokuapp.com)  
+- **Backend API:** [https://medvision-xr-backend-c69272f5f575.herokuapp.com/docs](https://medvision-xr-backend-c69272f5f575.herokuapp.com/docs)  
+
+You can run the frontend app directly in the browser and it communicates with the backend API for predictions and Grad-CAM visualizations.  
+
+---
+
 ## 🗂 Dataset
 
 **COVID-19 Radiography Database**  
