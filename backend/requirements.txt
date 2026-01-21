@@ -3,7 +3,6 @@ fastapi
 uvicorn[standard]
 python-multipart
 pillow
-pdf2image
 opencv-python-headless
 numpy
 pandas
