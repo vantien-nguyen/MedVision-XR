@@ -4,7 +4,7 @@ uvicorn
 python-multipart 
 pillow 
 pdf2image 
-opencv-python 
+opencv-python-headless
 numpy 
 matplotlib
 pandas

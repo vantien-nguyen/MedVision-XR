@@ -7,3 +7,4 @@ venv/
 .venv/
 .env
 *.ipynb
+Miniforge3-Darwin-arm64.sh
