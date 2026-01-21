@@ -41,7 +41,7 @@ You can run the frontend app directly in the browser and it communicates with th
 ### Dataset Structure
 
 ```
-data/
+data/COVID-19_Radiography_Dataset/
 ├── COVID/
 ├── NORMAL/
 ├── Viral Pneumonia/
