@@ -5,6 +5,3 @@ python-multipart
 pillow
 opencv-python-headless
 numpy
-pandas
-scikit-learn
-scipy
